@@ -1,4 +1,2 @@
-globaltex
-=========
-
-A Symfony project created on July 5, 2015, 3:45 am.
+# symfony-seed
+Symfony 2 seed project.
