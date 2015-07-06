@@ -8,7 +8,7 @@ use Symfony\Component\Security\Core\User\UserInterface;
 /**
  * Admin
  */
-class Admin
+class Admin implements UserInterface
 {
     /**
      * @var integer
