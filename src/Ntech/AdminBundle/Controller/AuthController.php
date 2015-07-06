@@ -13,10 +13,10 @@ class AuthController extends Controller
         $lastUsername = $authenticationUtils->getLastUsername();
 
         return $this->render(
-            'NtechAdminBundle:Auth:auth.html.twig',
+            'NtechAdminBundle:Auth:index.html.twig',
             array(
-                'last_username' => $lastUsername,
-                'error'         => $error,
+                'lastUsername' => $lastUsername,
+                'error'        => $error,
             )
         );
     }

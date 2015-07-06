@@ -23,5 +23,5 @@
 {% block bodyclass %}auth{% endblock %}
 
 {% block body %}
-    {{ include('NtechAdminBundle:Auth:auth.html.twig') }}
+    {% include('NtechAdminBundle:Auth:auth.html.twig') with {'lastUsername': lastUsername, 'error': error} %}
 {% endblock %}
