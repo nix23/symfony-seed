@@ -1,0 +1,39 @@
+<div class="authForm">
+    <div class="heading">
+        Admin Panel - Login
+    </div>
+
+    <form action="{{ path('admin_login_check') }}" method="post">
+        <div class="field">
+            <label for="username">
+                Username:
+            </label>
+
+            <div class="element">
+                <input type="text" id="username" name="_username" value="{{ lastUsername }}">
+            </div>
+        </div>
+
+        <div class="field">
+            <label for="password">
+                Password:
+            </label>
+
+            <div class="element">
+                <input type="password" id="password" name="_password">
+            </div>
+        </div>
+
+        <div class="field lastField">
+            <button type="submit">Login</button>
+        </div>
+    </form>
+</div>
+
+{% if error %}
+    <div class="errorForm">
+        <div class="content">
+            {{ error.message }}
+        </div>
+    </div>
+{% endif %}

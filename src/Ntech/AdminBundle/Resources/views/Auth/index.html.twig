@@ -1,0 +1,27 @@
+{% extends "NtechAdminBundle::layout.html.twig" %}
+
+{% block title %}Symfony seed - Admin auth{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    {% stylesheets filter='cssrewrite' output='css/*.css'
+        'bundles/ntechadmin/css/auth/auth.sass'
+    %}
+        <link href="{{ asset_url }}" type="text/css" rel="stylesheet"/>
+    {% endstylesheets %}
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    {% javascripts output='js/*.js'
+        '@NtechAdminBundle/Resources/public/js/auth/init.js'
+    %}
+        <script src="{{ asset_url }}"></script>
+    {% endjavascripts %}
+{% endblock %}
+
+{% block bodyclass %}auth{% endblock %}
+
+{% block body %}
+    {{ include('NtechAdminBundle:Auth:auth.html.twig') }}
+{% endblock %}

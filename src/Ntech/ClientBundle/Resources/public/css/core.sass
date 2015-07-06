@@ -1,0 +1,48 @@
+@import 'core/layout.sass'
+@import 'core/css3.sass'
+@import 'core/debug.sass'
+@import 'core/form.sass'
+
+$mainBgColor: rgb(235, 235, 235)
+
+@font-face
+    font-family: "Arial"
+//@font-face
+//    font-family: "Open Sans"
+//    src: url("/fonts/OpenSans-Regular.woff") format('woff'), url("/fonts/OpenSans-Regular.ttf") format('truetype')
+//
+//@font-face
+//    font-family: "Open Sans"
+//    src: url("/fonts/OpenSans-Bold.woff") format('woff'), url("/fonts/OpenSans-Bold.ttf") format('truetype')
+//    font-weight: bold
+
+body
+    //font-family: 'Open Sans', 'Arial', sans-serif
+    font-family: 'Arial', sans-serif
+    overflow-x: hidden
+    overflow-y: scroll
+    background: $mainBgColor
+    position: relative
+
+html
+    font-size: 20px
+
+@media(max-width: 979px)
+    html
+        font-size: 14px
+
+a
+    text-decoration: none
+
+    &:hover
+        text-decoration: underline
+
+.disableSelect
+    -webkit-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    -o-user-select: none
+    user-select: none
+
+.hidden
+    display: none

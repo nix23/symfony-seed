@@ -1,0 +1,41 @@
+=calc($property, $expression)
+    $property: -webkit-calc(#{$expression})
+    $property: -moz-calc(#{$expression})
+    $property: calc(#{$expression})
+
+=calcHalfOfMarginLeft($countToSubstract)
+    margin-left: -webkit-calc((100% - #{$countToSubstract}) / 2)
+    margin-left: -moz-calc((100% - #{$countToSubstract}) / 2)
+    margin-left: calc((100% - #{$countToSubstract}) / 2)
+
+=calcWidth($countToSubstract)
+    width: -webkit-calc(100% - #{$countToSubstract})
+    width: -moz-calc(100% - #{$countToSubstract})
+    width: calc(100% - #{$countToSubstract})
+
+=calcHeight($countToSubstract)
+    height: -webkit-calc(100% - #{$countToSubstract})
+    height: -moz-calc(100% - #{$countToSubstract})
+    height: calc(100% - #{$countToSubstract})
+
+=calcCustomHeight($originalCount, $countToSubstract)
+    height: -webkit-calc(#{$originalCount} - #{$countToSubstract})
+    height: -moz-calc(#{$originalCount} - #{$countToSubstract})
+    height: calc(#{$originalCount} - #{$countToSubstract})
+
+=calcCustomPaddingBottom($originalCount, $countToSubstract)
+    padding-bottom: -webkit-calc(#{$originalCount} - #{$countToSubstract})
+    padding-bottom: -moz-calc(#{$originalCount} - #{$countToSubstract})
+    padding-bottom: calc(#{$originalCount} - #{$countToSubstract})
+
+=transition($property, $duration)
+    -webkit-transition: $property $duration
+    -moz-transition: $property $duration
+    -ms-transition: $property $duration
+    -o-transition: $property $duration
+    transition: $property $duration
+
+=borderRadius($value)
+    -webkit-border-radius: $value
+    -moz-border-radius: $value
+    border-radius: $value

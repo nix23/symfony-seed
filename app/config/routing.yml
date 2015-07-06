@@ -1,0 +1,14 @@
+ntech_core:
+    resource: "@NtechCoreBundle/Resources/config/routing.yml"
+    prefix:   /
+
+ntech_client:
+    resource: "@NtechClientBundle/Resources/config/routing.yml"
+    prefix:   /
+
+ntech_admin:
+    resource: "@NtechAdminBundle/Resources/config/routing.yml"
+    prefix:   /admin
+
+fos_js_routing:
+    resource: "@FOSJsRoutingBundle/Resources/config/routing/routing.xml"

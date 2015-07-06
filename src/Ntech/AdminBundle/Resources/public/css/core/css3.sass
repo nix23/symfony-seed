@@ -1,0 +1,16 @@
+=calcWidth($countToSubstract)
+    width: -webkit-calc(100% - #{$countToSubstract})
+    width: -moz-calc(100% - #{$countToSubstract})
+    width: calc(100% - #{$countToSubstract})
+
+=calcHeight($countToSubstract)
+    height: -webkit-calc(100% - #{$countToSubstract})
+    height: -moz-calc(100% - #{$countToSubstract})
+    height: calc(100% - #{$countToSubstract})
+
+=transition($property, $duration)
+    -webkit-transition: $property $duration
+    -moz-transition: $property $duration
+    -ms-transition: $property $duration
+    -o-transition: $property $duration
+    transition: $property $duration

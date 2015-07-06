@@ -1,0 +1,19 @@
+@function randomColor()
+    $red: random(255)
+    @while $red < 150
+        $red: random(255)
+
+    $green: random(255)
+    @while $green < 150
+        $green: random(255)
+
+    $blue: random(255)
+    @while $blue < 150
+        $blue: random(255)
+
+    @return rgba($red, $green, $blue, 1)
+
+=bgs($className)
+    @for $i from 1 through 1000
+        #{$className}:nth-child(#{$i})
+            background-color: randomColor() !important

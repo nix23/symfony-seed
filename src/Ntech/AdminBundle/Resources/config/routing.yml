@@ -1,0 +1,13 @@
+admin_login:
+    pattern: /login 
+    defaults: { _controller: NtechAdminBundle:Auth:login }
+
+admin_login_check:
+    pattern: /login-check
+
+admin_logout:
+    pattern: /logout
+
+admin_dashboard:
+    path: /dashboard
+    defaults: { _controller: NtechAdminBundle:Dashboard:index }
